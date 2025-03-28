@@ -1,3 +1,4 @@
+
 let titulo = document.getElementById("titulo");
 console.log(titulo);
 
@@ -12,3 +13,16 @@ console.log(EsporteQS.textContent);
 
 let EsporteQSall = document.querySelectorAll(".Esporte");
 console.log(EsporteQSall);
+
+titulo.innerText = "Meus Esportes Favoritos";
+titulo.innerHTML = "<span style='color:blue'> Meus Esportes Favoritos </span>";
+
+let Lista = document.getElementById("Lista");
+
+let novoElemento = document.createElement("li");
+let NovoElemento = document.createElement("li");
+novoElemento.innerText = "Natação";
+NovoElemento.innerText = "Atletismo";
+
+Lista.appendChild(novoElemento);
+Lista.appendChild(NovoElemento);
